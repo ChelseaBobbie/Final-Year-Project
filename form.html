@@ -1,0 +1,477 @@
+
+    <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous"
+          />
+          <link rel="stylesheet" href="./assets/css/demolayout.css" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+          />
+          <link rel="stylesheet" href="./assets/css/demolayout.css" />
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+          />
+      
+          <title>ThePublicServiceDomain</title>
+        </head>
+      
+        <body>
+          <div class="con">
+            <div class="list">
+              <div class="con">
+                
+            </div>
+            <header class="headercss" id="headercss" style="z-index: 1000">
+              <nav id="header" class="button-container">
+                <a href="#carouselExampleAutoplaying" class="custom-button">
+                  <i class="fa fa-home"></i> Home
+                </a>
+                <a href="#aboutus" class="custom-button">
+                  <i class="fa fa-info-circle"></i> About Us
+                </a>
+                <a href="#contact" class="custom-button">
+                  <i class="fa fa-phone"></i> Contact
+                </a>
+                <a href="./signin.html" class="custom-button">
+                  <i class="fa fa-sign-in"></i> Sign In
+                </a>
+                <a href="#ourproducts" class="custom-button">
+                  <i class="fa fa-star" aria-hidden="true"></i> Rate</a>
+                <a href= view-ratings.php class="custom-button"> 
+                  <i class="fa fa-bar-chart"></i>View Data </a>
+                
+              </nav>
+      
+              <section class="menutop">
+                <div class="logo">
+                  <p>PSEP</p>
+                </div>
+      
+                <button id="burger" class="menuburger custom-button">
+                  <i class="fa fa-bars"></i>
+                </button>
+              </section>
+      
+              <section id="topmenu" class="topmenu" hidden>
+                <a href="#carouselExampleAutoplaying" class="custom-button">
+                  <i class="fa fa-home"></i> Home
+                </a>
+                <a href="#aboutus" class="custom-button">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i> About Us
+                </a>
+                <a href="#ourproducts" class="custom-button">
+                  <i class="fa fa-shopping-cart"></i> Rate
+                </a>
+                <a href="./signin.php" class="custom-button">
+                  <i class="fa fa-sign-in" aria-hidden="true"></i> Sign In
+                </a>
+      
+                <a href="#contact" class="custom-button">
+                  <i class="fa fa-phone"></i> Contact Us
+                </a>
+              </section>
+            </header>
+            <div
+              id="carouselExampleAutoplaying"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner" data-bs-interval="1000">
+                <div class="carousel-item active">
+                  <img
+                    src="./assets/images/image5.png"
+                    id="imagecar"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./assets/images/image7.png"
+                    id="imagecar"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+      
+            <div class="firstheader" id="ourproducts" >
+             
+    
+         
+             
+              <div  style="align-items:center ;" class="form-container">
+           <style>
+                  .form-page {
+                      display: none;
+                      padding: 20px;
+                      background-color:rgb(215, 215, 215);
+                      width: 100%;
+                      ;
+                      color: #000000; /* Text color set to black for readability */
+                  }
+                  .form-page.active {
+                      display: block; /* Only the active page is displayed */
+                  }
+                button {
+                      margin-top: 10px;
+                  background-color: #0067b8; /* Blue background for buttons */
+                  color: #ffffff; /* White text for buttons */
+                  padding: 10px 20px;
+                  border: none;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  transition: background-color 0.3s ease, color 0.3s ease;
+                      }
+                  button:hover {
+                        background-color: #004a86; /* Darker blue on hover */
+                         }
+                 p {
+                     text-align: left; 
+                      color: #000000; 
+                    margin-top: 1rem;
+                     margin-bottom: 0rem;
+                   }
+                    h2{
+                           color: #000000;
+                        }
+                        form{
+                     text-align: left;
+                       }
+                input{
+                  align-self: flex-start;
+                }
+      </style>
+                <div style="align-items:center" class="con" id="formContainer">
+                  <h2>Survey Questions</h2>
+                  <form style="align-items:center ;" method="post" action="submit_survey.php">
+                    <div class="form-page active" id="page1">
+                      <h2>Demographic information</h2>
+                      
+                        <p>What is your age?</p>
+                        <input type="hidden" name="question_text_1" value="What is your age?">
+                        <input type="radio" name="response_1" value="18-30"> 18-30<br>
+                        <input type="radio" name="response_1" value="31-50"> 31-50<br>
+                        <input type="radio" name="response_1" value="51 and above"> 51 and above<br>
+                   
+                    <!-- Question 2: Income per month -->
+                   
+                        <p>What is your income per month?</p>
+                        <input type="hidden" name="question_text_2" value="What is your income per month?">
+                        <input type="radio" name="response_2" value="Less than ₵30,000"> Less than ₵30,000<br>
+                        <input type="radio" name="response_2" value="₵30,000 - ₵60,000"> ₵30,000 - ₵60,000<br>
+                        <input type="radio" name="response_2" value="₵60,000 - ₵100,000"> ₵60,000 - ₵100,000<br>
+                   
+                    <!-- Question 3: Gender -->
+                    
+                        <p>What is your gender?</p>
+                        <input type="hidden" name="question_text_3" value="What is your gender?">
+                        <input type="radio" name="response_3" value="Male"> Male<br>
+                        <input type="radio" name="response_3" value="Female"> Female<br>
+                        <input type="radio" name="response_3" value="Prefer not to say"> Prefer not to say<br>
+                    
+                    <!-- Question 4: Education Level -->
+                    
+                        <p>What is your education level?</p>
+                        <input type="hidden" name="question_text_4" value="What is your education level?">
+                        <input type="radio" name="response_4" value="High School or below"> High School or below<br>
+                        <input type="radio" name="response_4" value="Some College or Associate's Degree"> Some College or Associate's Degree<br>
+                        <input type="radio" name="response_4" value="Bachelor's Degree"> Bachelor's Degree<br>
+                        <input type="radio" name="response_4" value="Master's Degree or higher"> Master's Degree or higher<br>
+                    
+                    <!-- Question 5: Location -->
+                    
+                        <p>What is your location?</p>
+                        <input type="hidden" name="question_text_5" value="What is your location?">
+                        <input type="radio" name="response_5" value="Urban"> Urban<br>
+                        <input type="radio" name="response_5" value="Suburban"> Suburban<br>
+                        <input type="radio" name="response_5" value="Rural"> Rural<br>
+                   
+                    <!-- Question 6: Ethnicity -->
+                   
+                        <p>What is your ethnicity?</p>
+                        <input type="hidden" name="question_text_6" value="What is your ethnicity?">
+                        <input type="radio" name="response_6" value="African American/Black"> African American/Black<br>
+                        <input type="radio" name="response_6" value="Caucasian/White"> Caucasian/White<br>
+                        <input type="radio" name="response_6" value="Hispanic/Latino"> Hispanic/Latino<br>
+                        <input type="radio" name="response_6" value="Asian/Asian American"> Asian/Asian American<br>
+                    
+                            <button type="button" onclick="nextPage(1)">Next</button>
+                        
+                    </div>
+                    <!-- Page 2 -->
+                    <div class="form-page" id="page2">
+                      
+                      <h1 >Availability of Service</h1>
+                     
+                        <p>Do you believe the public service institution is easily accessible from your home?</p>
+                        <input type="hidden" name="question_text_7" value="Do you believe the public service institution is easily accessible from your home?">
+                        <input type="radio" name="response_7" value="Yes"> Yes<br>
+                        <input type="radio" name="response_7" value="No"> No<br>
+                    
+                    
+                    <!-- Question 8: Services advertised -->
+                    
+                        <p>Does the institution provide all the services it advertises?</p>
+                        <input type="hidden" name="question_text_8" value="Does the institution provide all the services it advertises?">
+                        <input type="radio" name="response_8" value="Yes, it does"> Yes, it does<br>
+                        <input type="radio" name="response_8" value="Not all, but some"> Not all, but some<br>
+                        <input type="radio" name="response_8" value="No, it does not"> No, it does not<br>
+                    
+                    
+                    <!-- Question 9: Ease of getting an appointment -->
+                    
+                        <p>How easy is it to get an appointment at the institution when needed?</p>
+                        <input type="hidden" name="question_text_9" value="How easy is it to get an appointment at the institution when needed?">
+                        <input type="radio" name="response_9" value="Very easy"> Very easy<br>
+                        <input type="radio" name="response_9" value="Easy"> Easy<br>
+                        <input type="radio" name="response_9" value="Neither easy nor hard"> Neither easy nor hard<br>
+                        <input type="radio" name="response_9" value="Hard"> Hard<br>
+                        <input type="radio" name="response_9" value="Very hard"> Very hard<br>
+                 
+                    
+                    <!-- Question 10: Staff knowledge and assistance -->
+                 
+                        <p>Are the staff at the institution knowledgeable and able to assist you efficiently?</p>
+                        <input type="hidden" name="question_text_10" value="Are the staff at the institution knowledgeable and able to assist you efficiently?">
+                        <input type="radio" name="response_10" value="Yes, they are"> Yes, they are<br>
+                        <input type="radio" name="response_10" value="No, they are not"> No, they are not<br>
+                  
+                    <!-- Question 11: Reasonable waiting times -->
+                    
+                        <p>Do you feel that the waiting times at this institution are reasonable?</p>
+                        <input type="hidden" name="question_text_11" value="Do you feel that the waiting times at this institution are reasonable?">
+                        <input type="radio" name="response_11" value="Yes, very reasonable"> Yes, very reasonable<br>
+                        <input type="radio" name="response_11" value="Somewhat reasonable"> Somewhat reasonable<br>
+                        <input type="radio" name="response_11" value="Not reasonable"> Not reasonable<br>
+                   
+                    
+                    <!-- Question 12: Modern and functional facilities -->
+                    
+                        <p>Are the facilities at the institution modern and functional?</p>
+                        <input type="hidden" name="question_text_12" value="Are the facilities at the institution modern and functional?">
+                        <input type="radio" name="response_12" value="Yes, very modern and functional"> Yes, very modern and functional<br>
+                        <input type="radio" name="response_12" value="Somewhat modern and functional"> Somewhat modern and functional<br>
+                        <input type="radio" name="response_12" value="Not modern or functional at all"> Not modern or functional at all<br>
+                
+                    
+                          <button type="button" onclick="nextPage(2)">Next</button>
+                       
+                    </div>
+                    <!-- Page 3 -->
+                    <div class="form-page" id="page3">
+                      <h1 > Corruption/Unfairness</h1>
+                      
+                        <p>In your view, how frequently does corruption take place within this public service institution?</p>
+                        <input type="hidden" name="question_text_13" value="In your view, how frequently does corruption take place within this public service institution?">
+                        <input type="radio" name="response_13" value="Very frequently"> Very frequently<br>
+                        <input type="radio" name="response_13" value="Occasionally"> Occasionally<br>
+                        <input type="radio" name="response_13" value="Rarely"> Rarely<br>
+                        <input type="radio" name="response_13" value="Never"> Never<br>
+                   
+                
+                    <!-- Question 14: Transparency of Procedures -->
+                   
+                        <p>In your experience, how transparent are the procedures at this institution?</p>
+                        <input type="hidden" name="question_text_14" value="In your experience, how transparent are the procedures at this institution?">
+                        <input type="radio" name="response_14" value="Completely transparent"> Completely transparent<br>
+                        <input type="radio" name="response_14" value="Somewhat transparent"> Somewhat transparent<br>
+                        <input type="radio" name="response_14" value="Not very transparent"> Not very transparent<br>
+                        <input type="radio" name="response_14" value="Not transparent at all"> Not transparent at all<br>
+                    
+                
+                    <!-- Question 15: Bribery for Services -->
+                    
+                        <p>Have you or someone you know ever been asked for a bribe or favor in exchange for services from this institution?</p>
+                        <input type="hidden" name="question_text_15" value="Have you or someone you know ever been asked for a bribe or favor in exchange for services from this institution?">
+                        <input type="radio" name="response_15" value="Yes, frequently"> Yes, frequently<br>
+                        <input type="radio" name="response_15" value="Yes, but only once or twice"> Yes, but only once or twice<br>
+                        <input type="radio" name="response_15" value="No, but I've heard of such cases"> No, but I've heard of such cases<br>
+                        <input type="radio" name="response_15" value="No, never"> No, never<br>
+                    
+                
+                    <!-- Question 16: Fairness of Service Delivery -->
+                    
+                        <p>How would you rate the fairness of service delivery at this institution?</p>
+                        <input type="hidden" name="question_text_16" value="How would you rate the fairness of service delivery at this institution?">
+                        <input type="radio" name="response_16" value="Very fair"> Very fair<br>
+                        <input type="radio" name="response_16" value="Fair"> Fair<br>
+                        <input type="radio" name="response_16" value="Unfair"> Unfair<br>
+                        <input type="radio" name="response_16" value="Very unfair"> Very unfair<br>
+                   
+                
+                    <!-- Question 17: Time to Get Attended -->
+                    
+                        <p>How much time did it take to get attended to at this institution?</p>
+                        <input type="hidden" name="question_text_17" value="How much time did it take to get attended to at this institution?">
+                        <input type="radio" name="response_17" value="A very short amount of time"> A very short amount of time<br>
+                        <input type="radio" name="response_17" value="A short amount of time"> A short amount of time<br>
+                        <input type="radio" name="response_17" value="A reasonable amount of time"> A reasonable amount of time<br>
+                        <input type="radio" name="response_17" value="A long time"> A long time<br>
+                        <input type="radio" name="response_17" value="A very long time"> A very long time<br>
+                    
+                
+                    <!-- Question 18: Bias in Treatment -->
+                    
+                        <p>Do you believe that there is a bias towards certain groups of people in terms of the treatment they receive within this organization?</p>
+                        <input type="hidden" name="question_text_18" value="Do you believe that there is a bias towards certain groups of people in terms of the treatment they receive within this organization?">
+                        <input type="radio" name="response_18" value="Yes, definitely"> Yes, definitely<br>
+                        <input type="radio" name="response_18" value="Possibly"> Possibly, but not obviously<br>
+                        <input type="radio" name="response_18" value="I'm not sure"> I'm not sure<br>
+                        <input type="radio" name="response_18" value="No"> No, everyone is treated equally<br>
+                 
+                
+                    <!-- Question 19: Leadership Corruption Practices -->
+                   
+                        <p>How often do you think the leadership of this institution engages in corrupt practices?</p>
+                        <input type="hidden" name="question_text_19" value="How often do you think the leadership of this institution engages in corrupt practices?">
+                        <input type="radio" name="response_19" value="Very often"> Very often<br>
+                        <input type="radio" name="response_19" value="Sometimes"> Sometimes<br>
+                        <input type="radio" name="response_19" value="Rarely"> Rarely<br>
+                        <input type="radio" name="response_19" value="Never"> Never<br>
+              
+                          <button type="button" onclick="nextPage(3)">Next</button>
+                        
+                    </div>
+                    <!-- Submit Page -->
+                    <div class="form-page" id="submitPage">
+                      
+                        <input type="submit" value="Submit Survey">
+                        <a type="custom-button" href="./index.php">Go Back to HomePage</a>
+                      </form>
+                    </div>
+                
+                
+                <script>
+                    function nextPage(currentPage) {
+                        var currentPageElement = document.getElementById('page' + currentPage);
+                        var nextPageElement = document.getElementById('page' + (currentPage + 1));
+                        if (nextPageElement) {
+                            currentPageElement.classList.remove('active');
+                            nextPageElement.classList.add('active');
+                        } else {
+                           
+                            currentPageElement.classList.remove('active');
+                            document.getElementById('submitPage').classList.add('active');
+                        }
+                    }
+                
+                    function submitForm() {
+                        alert('Form submitted!');
+                      
+                    }
+                          </script>
+                      </div>
+                      </div>
+                    </div>
+
+
+
+      
+            <section class="aboutus" id="aboutus">
+              <h1>About Us</h1>
+      
+              <p>
+                Welcome to ThePublicServiceDomain, your go-to destination for
+                insightful evaluations and reviews of diverse public services. We're
+                dedicated to empowering citizens with transparent, trustworthy
+                information to navigate and engage with essential public services
+                effectively. Our platform serves as a beacon of accountability,
+                fostering informed decision-making and driving positive change within
+                communities. Join us in shaping a better public service landscape for
+                all.
+              </p>
+            </section>
+      
+            <section class="contact" id="contact">
+              <div>
+                <h1>Contact Us</h1>
+                <form class="form">
+                  <label>Name</label>
+                  <input
+                    class="input"
+                    type=""
+                    placeholder="Enter Your Name"
+                    title="Names"
+                  />
+                  <label>E-mail</label>
+                  <input
+                    class="input"
+                    type="email"
+                    placeholder="Enter Your E-mail"
+                    title="E-mail"
+                  />
+                  <label>Date of Birth</label
+                  ><input
+                    class="input"
+                    type="date"
+                    placeholder="Enter Your DOB "
+                    title="DOB"
+                  />
+                  <label>Enter Your Issue</label>
+                  <textarea rows="6" class="issue"></textarea>
+                  <a href="./contactus.html" class="submit">Submit Form</a>
+                </form>
+              </div>
+            </section>
+            <footer class="footer">
+              <a href="#carouselExampleAutoplaying" class="custom-button">
+                <i class="fa fa-home"></i> Home
+              </a>
+              <a href="#aboutus" class="custom-button">
+                <i class="fa fa-info-circle" aria-hidden="true"></i> About Us
+              </a>
+              <a href="#ourproducts" class="custom-button">
+                <i class="fa fa-shopping-cart"></i> Rate
+              </a>
+              <a href="./signin.php" class="custom-button">
+                <i class="fa fa-sign-in" aria-hidden="true"></i> Sign In
+              </a>
+      
+              <a href="#carouselExampleAutoplaying" class="custom-button">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i> Back To Top
+              </a>
+            </footer>
+          
+          <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"
+          ></script>
+          <script src="script.js"></script>
+        </body>
+      </html>
+      

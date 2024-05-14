@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-container {
+  background-color: #ececec;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgb(215, 215, 215);
+  color: #000000;
+  border: none;
+  text-decoration: none;
+  transition: background-color color 0.3s ease;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+  background-color: #0067b8;
+  color: #ffffff;
+  border-radius: 10px;
+}
